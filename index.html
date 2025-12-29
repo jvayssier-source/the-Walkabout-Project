@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sailing Again | REFITTING A JEANTOT PRIVILEGE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="#" class="logo">⛵ Cat Project</a>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#specs">Specs</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Sailing Again: The Walkabout project</h1>
+        <p>Documenting the adventurous journey of a Jeantot Privilege 12 catamaran from an old hull to high seas.</p>
+    </header>
+
+    <figure class="photo-container">
+    <img src="babor.jpg" alt="White and blue Jeantot Privilege 12 catamaran hauled outin a boatyard in Guatemala. The port hull shows weathered fiberglass requiring restoration work." class="main-photo">
+    <figcaption>Day 1: Assessing the state of the fiberglass on the port hull.</figcaption>
+</figure>
+
+        
+        <section id="about" class="about-project">
+            <div class="about-content">
+                <h2>The Mission: Bringing a Legend Back to Life</h2>
+                <p>I found a Jeantot Priviege 12 catamaran sitting neglected in a boatyard in Guatemala. 
+                    It had been there since the Covid pandemic that started in 2019. 
+                    The owner,a German sailer, had not been able to return to the boat for 6 years 
+                    and decided to sell it. This blog tracks the journey, the effort, the disappointments, and the small victories of restoring a multihull for blue-water cruising.</p>
+                <div class="about-stats">
+                    <div class="stat-item"><strong>Status:</strong> On the hard in Guatemala</div>
+                    <div class="stat-item"><strong>Goal:</strong> Summer 2026 Launch and sailing in Belize</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="comparison-container">
+            <h3>Latest Transformation</h3>
+            <div class="comparison-slider">
+                <div class="img background-img" style="background-image: url('after.jpg'); background-color: #24507d;"></div>
+                <div class="img foreground-img" style="background-image: url('before.jpg'); background-color: #888;"></div>
+                <input type="range" min="1" max="100" value="50" class="slider" id="slider">
+            </div>
+            <p class="help-text">Drag slider to see progress</p>
+        </section>
+
+        <section id="specs" class="specs-container">
+            <h2>Vessel Specifications</h2>
+            <table class="specs-table">
+                <thead>
+                    <tr><th>Feature</th><th>Original</th><th>Status</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Length Overall</strong></td><td>32' 0"</td><td>34' 0"</td></tr>
+                    <tr><td><strong>Beam</strong></td><td>14' 6"</td><td>14' 6"</td></tr>
+                    <tr><td><strong>Power</strong></td><td> 2 Yanmar 4JH4AE</td><td>Diesel inboard</td></tr>
+                    <tr><td><strong>Sail Area</strong></td><td>650 sq ft</td><td>650 sq ft</td></tr>
+                    <tr><td><strong>Displacement</strong></td><td>9000 kg</td><td>9500 kg (estimated)</td></tr>
+                     <tr><td><strong>Cabins </strong></td><td>4 double </td><td>4 double</td></tr> 
+                    </tbody>
+            </table>
+        </section>
+
+        <section id="roadmap" class="roadmap-container">
+            <h2>Restoration Roadmap</h2>
+            <div class="timeline">
+                <div class="milestone completed">
+                    <div class="status-dot"></div>
+                    <div class="milestone-content"><h3>Phase 1: Stripping</h3><span class="badge">Done</span></div>
+                </div>
+                <div class="milestone active">
+                    <div class="status-dot"></div>
+                    <div class="milestone-content"><h3>Phase 2: Structural</h3><span class="badge">In Progress</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-box">
+            <h3>Follow the Voyage</h3>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Name" required>
+                <textarea placeholder="Message..." rows="4"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Catamaran Restoration Blog</p>
+    </footer>
+
+    <script>
+        const slider = document.getElementById('slider');
+        const foregroundImg = document.querySelector('.foreground-img');
+        slider.addEventListener('input', (e) => {
+            foregroundImg.style.width = `${e.target.value}%`;
+        });
+    </script>
+</body>
+</html>

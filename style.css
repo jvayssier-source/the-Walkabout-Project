@@ -1,0 +1,195 @@
+body { 
+    font-family: 'Arial', sans-serif; 
+    line-height: 1.6; 
+    margin: 0; 
+    background: #f4f7f6; 
+    color: #333; 
+}
+
+.container { 
+    max-width: 900px; 
+    margin: auto; 
+    padding: 20px; 
+}
+
+/* Nav & Header */
+.main-nav { 
+    background: #1a3a5a; 
+    padding: 1rem 0; 
+    position: sticky; 
+    top: 0; 
+    z-index: 100; 
+}
+
+.nav-container { 
+    display: flex; 
+    justify-content: space-between; 
+    max-width: 900px; 
+    margin: auto; 
+    padding: 0 20px; 
+}
+
+.main-nav ul { 
+    display: flex; 
+    list-style: none; 
+    gap: 15px; 
+    margin: 0; 
+}
+
+.main-nav a { 
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+header { 
+    background: #1a3a5a; 
+    color: white; 
+    text-align: center; 
+    padding: 4rem 1rem; 
+}
+
+/* Sections */
+section { 
+    background: white; 
+    padding: 2rem; 
+    border-radius: 8px; 
+    margin-bottom: 2rem; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); 
+}
+
+/* Table */
+.specs-table { 
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+.specs-table th { 
+    background: #1a3a5a; 
+    color: white; 
+    padding: 10px; 
+    text-align: left; 
+}
+
+.specs-table td { 
+    padding: 10px; 
+    border-bottom: 1px solid #eee; 
+}
+
+/* Slider */
+.comparison-slider { 
+    position: relative; 
+    width: 100%; 
+    height: 400px; 
+    overflow: hidden; 
+    border-radius: 8px; 
+}
+
+.img { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-size: cover; 
+    background-position: center; 
+}
+
+.foreground-img { 
+    width: 50%; 
+    border-right: 3px solid white; 
+}
+
+.slider { 
+    position: absolute; 
+    -webkit-appearance: none; 
+    width: 100%; 
+    height: 100%; 
+    background: transparent; 
+    z-index: 10; 
+    cursor: ew-resize; 
+    margin: 0; 
+}
+
+/* Roadmap */
+.timeline { 
+    border-left: 4px solid #ddd; 
+    padding-left: 20px; 
+    margin-left: 20px; 
+}
+
+.milestone { 
+    position: relative; 
+    margin-bottom: 1.5rem; 
+}
+
+.status-dot { 
+    position: absolute; 
+    left: -28px; 
+    top: 5px; 
+    width: 12px; 
+    height: 12px; 
+    border-radius: 50%; 
+    background: #bbb; 
+    border: 2px solid white; 
+}
+
+.completed .status-dot { 
+    background: #2ecc71; 
+}
+
+.active .status-dot { 
+    background: #f1c40f; 
+}
+
+.badge { 
+    font-size: 0.7rem; 
+    padding: 3px 8px; 
+    border-radius: 4px; 
+    background: #eee; 
+}
+
+/* Forms */
+input, textarea { 
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+}
+
+button { 
+    background: #1a3a5a; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    border-radius: 4px; 
+    width: 100%; 
+    font-weight: bold; 
+}
+
+.newsletter-box { 
+    background: #1a3a5a; 
+    color: white; 
+    text-align: center; 
+}.main-photo {
+    width: 100%;        /* Make it as wide as the text box */
+    max-width: 600px;   /* But don't let it get bigger than 600 pixels */
+    height: auto;       /* Keep the proportions correct so it isn't squished */
+    border-radius: 8px; /* Give it nice rounded corners */
+    display: block;
+    margin: 20px auto;  /* Center the image */
+    border: 5px solid #f0f0f0; /* Add a light frame around it */
+}.photo-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+figcaption {
+    font-style: italic;
+    color: #666; /* A softer gray color */
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
