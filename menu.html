@@ -3,11 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Walkabout Galley | Menu</title>
+    <title>Moana Nui Galley | Menu</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="menu.css">
 </head>
-<body>
+<body class="menu-page">
+
+    <!-- Reusable drawings: an anchor and the international maritime signal flags used below -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <symbol id="anchor" viewBox="0 0 24 24">
+            <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <circle cx="12" cy="4.5" r="2.2"/>
+                <path d="M12 6.7V21M7 10h10M3.5 13.5c0 4.5 4 7.5 8.5 7.5s8.5-3 8.5-7.5"/>
+                <path d="M2 15.5l1.5-2 2 1.5M22 15.5l-1.5-2-2 1.5"/>
+            </g>
+        </symbol>
+        <symbol id="flag-m" viewBox="0 0 30 20">
+            <rect width="30" height="20" fill="#1d4f9c"/>
+            <path d="M0 0L30 20M30 0L0 20" stroke="#fff" stroke-width="4"/>
+        </symbol>
+        <symbol id="flag-o" viewBox="0 0 30 20">
+            <rect width="30" height="20" fill="#f2c200"/>
+            <path d="M0 0H30V20Z" fill="#c8202f"/>
+        </symbol>
+        <symbol id="flag-a" viewBox="0 0 30 20">
+            <rect width="15" height="20" fill="#fff"/>
+            <path d="M15 0H30L23 10L30 20H15Z" fill="#1d4f9c"/>
+        </symbol>
+        <symbol id="flag-n" viewBox="0 0 30 20">
+            <rect width="30" height="20" fill="#fff"/>
+            <path fill="#1d4f9c" d="M0 0h7.5v5H0zM15 0h7.5v5H15zM7.5 5H15v5H7.5zM22.5 5H30v5h-7.5zM0 10h7.5v5H0zM15 10h7.5v5H15zM7.5 15H15v5H7.5zM22.5 15H30v5h-7.5z"/>
+        </symbol>
+        <symbol id="flag-u" viewBox="0 0 30 20">
+            <rect width="30" height="20" fill="#fff"/>
+            <path fill="#c8202f" d="M0 0h15v10H0zM15 10h15v10H15z"/>
+        </symbol>
+        <symbol id="flag-i" viewBox="0 0 30 20">
+            <rect width="30" height="20" fill="#f2c200"/>
+            <circle cx="15" cy="10" r="5" fill="#111"/>
+        </symbol>
+    </svg>
 
     <nav class="main-nav">
         <div class="nav-container">
@@ -22,76 +57,95 @@
     </nav>
 
     <header class="menu-header">
-        <h1>The Walkabout Galley</h1>
-        <p>Dockside cooking from the Río Dulce to the Belize cayes</p>
+        <svg class="header-anchor" aria-hidden="true"><use href="#anchor"/></svg>
+        <h1>MOANA NUI GALLEY</h1>
+        <p>Served on deck, from the Río Dulce to the Belize cayes</p>
+
+        <div class="signal-flags" role="img" aria-label="Maritime signal flags spelling MOANA NUI">
+            <svg><use href="#flag-m"/></svg>
+            <svg><use href="#flag-o"/></svg>
+            <svg><use href="#flag-a"/></svg>
+            <svg><use href="#flag-n"/></svg>
+            <svg><use href="#flag-a"/></svg>
+            <span class="flag-gap"></span>
+            <svg><use href="#flag-n"/></svg>
+            <svg><use href="#flag-u"/></svg>
+            <svg><use href="#flag-i"/></svg>
+        </div>
     </header>
 
     <main class="menu">
 
         <ul class="menu-filters" aria-label="Jump to section">
-            <li><a href="#starters">Starters</a></li>
-            <li><a href="#mains">Mains</a></li>
-            <li><a href="#sides">Sides</a></li>
-            <li><a href="#desserts">Desserts</a></li>
-            <li><a href="#drinks">Drinks</a></li>
+            <li><a href="#starters">Casting Off</a></li>
+            <li><a href="#mains">Full Sail</a></li>
+            <li><a href="#sides">Deckhands</a></li>
+            <li><a href="#desserts">Safe Harbour</a></li>
+            <li><a href="#drinks">Rum Locker</a></li>
         </ul>
 
         <section id="starters" class="menu-section">
-            <h2>Starters</h2>
+            <svg class="section-anchor" aria-hidden="true"><use href="#anchor"/></svg>
+            <h2>Casting Off</h2>
+            <p class="section-sub">Starters</p>
             <ul class="menu-items">
                 <li class="menu-item">
-                    <div class="item-head"><h3>Conch Ceviche</h3><span class="price">$12</span></div>
+                    <div class="item-head"><h3>First Mate's Conch Ceviche</h3><span class="price">$12</span></div>
                     <p>Fresh conch cured in lime with red onion, habanero, cilantro and tomato. Served with plantain chips.</p>
                     <span class="tag gf">GF</span>
                 </li>
                 <li class="menu-item">
-                    <div class="item-head"><h3>Fish Panades</h3><span class="price">$9</span></div>
+                    <div class="item-head"><h3>Port Side Fish Panades</h3><span class="price">$9</span></div>
                     <p>Crispy corn turnovers stuffed with spiced snapper, topped with pickled onion "curtido".</p>
                 </li>
                 <li class="menu-item">
-                    <div class="item-head"><h3>Guacamole &amp; Totopos</h3><span class="price">$8</span></div>
+                    <div class="item-head"><h3>Starboard Guacamole</h3><span class="price">$8</span></div>
                     <p>Hand-mashed avocado, lime and chile with warm house-fried tortilla chips.</p>
                     <span class="tag v">V</span><span class="tag gf">GF</span>
                 </li>
                 <li class="menu-item">
-                    <div class="item-head"><h3>Coconut Shrimp</h3><span class="price">$13</span></div>
+                    <div class="item-head"><h3>Bosun's Coconut Shrimp</h3><span class="price">$13</span></div>
                     <p>Shrimp in a coconut crust with a sweet mango–chile dipping sauce.</p>
                 </li>
             </ul>
         </section>
 
         <section id="mains" class="menu-section">
-            <h2>Mains</h2>
+            <svg class="section-anchor" aria-hidden="true"><use href="#anchor"/></svg>
+            <h2>Full Sail</h2>
+            <p class="section-sub">Mains</p>
             <ul class="menu-items">
                 <li class="menu-item">
-                    <div class="item-head"><h3>Tapado</h3><span class="price">$24</span></div>
-                    <p>Garífuna coconut seafood stew with fish, shrimp, crab and green plantain from Lívingston.</p>
-                    <span class="tag gf">GF</span><span class="tag house">House favourite</span>
+                    <div class="item-head"><h3>Galley Tapado</h3><span class="price">$24</span></div>
+                    <p>Garífuna coconut seafood stew with fish, shrimp, crab and green plantain, as made in Lívingston.</p>
+                    <span class="tag gf">GF</span><span class="tag house">Captain's pick</span>
                 </li>
                 <li class="menu-item">
-                    <div class="item-head"><h3>Whole Grilled Snapper</h3><span class="price">$26</span></div>
-                    <p>Caught this morning, grilled over charcoal with garlic butter. Comes with rice &amp; beans and slaw.</p>
+                    <div class="item-head"><h3>The Captain's Catch</h3><span class="price">$26</span></div>
+                    <p>Whole snapper landed this morning, grilled over charcoal with garlic butter. With rice &amp; beans and slaw.</p>
                     <span class="tag gf">GF</span>
                 </li>
                 <li class="menu-item">
-                    <div class="item-head"><h3>Belizean Stew Chicken</h3><span class="price">$18</span></div>
+                    <div class="item-head"><h3>Skipper's Stew Chicken</h3><span class="price">$18</span></div>
                     <p>Chicken braised low and slow in red recado, served with coconut rice &amp; beans and potato salad.</p>
                 </li>
                 <li class="menu-item">
-                    <div class="item-head"><h3>Grilled Lobster Tail</h3><span class="price">Market</span></div>
+                    <div class="item-head"><h3>Lobster Pot Tail</h3><span class="price">Market</span></div>
                     <p>Caribbean spiny lobster with lime-herb butter. In season June to February.</p>
                     <span class="tag gf">GF</span>
                 </li>
                 <li class="menu-item">
-                    <div class="item-head"><h3>Jackfruit Pepián</h3><span class="price">$17</span></div>
-                    <p>Guatemala's national stew, made with roasted pumpkin seeds, sesame and chiles over jackfruit and vegetables.</p>
+                    <div class="item-head"><h3>Landlubber's Pepián</h3><span class="price">$17</span></div>
+                    <p>Guatemala's national stew of roasted pumpkin seeds, sesame and chiles, over jackfruit and vegetables.</p>
                     <span class="tag v">V</span><span class="tag gf">GF</span>
                 </li>
             </ul>
         </section>
 
         <section id="sides" class="menu-section">
-            <h2>Sides</h2>
+            <svg class="section-anchor" aria-hidden="true"><use href="#anchor"/></svg>
+            <h2>Deckhands</h2>
+            <p class="section-sub">Sides</p>
             <ul class="menu-items compact">
                 <li class="menu-item"><div class="item-head"><h3>Coconut Rice &amp; Beans</h3><span class="price">$5</span></div></li>
                 <li class="menu-item"><div class="item-head"><h3>Fried Plantains</h3><span class="price">$5</span></div></li>
@@ -101,10 +155,12 @@
         </section>
 
         <section id="desserts" class="menu-section">
-            <h2>Desserts</h2>
+            <svg class="section-anchor" aria-hidden="true"><use href="#anchor"/></svg>
+            <h2>Safe Harbour</h2>
+            <p class="section-sub">Desserts</p>
             <ul class="menu-items">
                 <li class="menu-item">
-                    <div class="item-head"><h3>Rum Cake</h3><span class="price">$8</span></div>
+                    <div class="item-head"><h3>Shipwreck Rum Cake</h3><span class="price">$8</span></div>
                     <p>Dense, buttery and soaked in dark Caribbean rum. Served with vanilla ice cream.</p>
                 </li>
                 <li class="menu-item">
@@ -113,7 +169,7 @@
                     <span class="tag v">V</span>
                 </li>
                 <li class="menu-item">
-                    <div class="item-head"><h3>Coconut Flan</h3><span class="price">$7</span></div>
+                    <div class="item-head"><h3>Low Tide Coconut Flan</h3><span class="price">$7</span></div>
                     <p>Silky caramel custard with toasted coconut.</p>
                     <span class="tag gf">GF</span>
                 </li>
@@ -121,27 +177,29 @@
         </section>
 
         <section id="drinks" class="menu-section">
-            <h2>Drinks</h2>
+            <svg class="section-anchor" aria-hidden="true"><use href="#anchor"/></svg>
+            <h2>The Rum Locker</h2>
+            <p class="section-sub">Drinks</p>
             <ul class="menu-items">
                 <li class="menu-item">
-                    <div class="item-head"><h3>Walkabout Rum Punch</h3><span class="price">$9</span></div>
-                    <p>Our signature: aged rum, passion fruit, lime, nutmeg and a splash of grenadine.</p>
+                    <div class="item-head"><h3>Moana Nui Grog</h3><span class="price">$9</span></div>
+                    <p>Our signature punch: aged rum, passion fruit, lime, nutmeg and a splash of grenadine.</p>
                 </li>
                 <li class="menu-item">
                     <div class="item-head"><h3>Gallo or Belikin Beer</h3><span class="price">$5</span></div>
                     <p>Ice-cold lagers from Guatemala and Belize.</p>
                 </li>
                 <li class="menu-item">
-                    <div class="item-head"><h3>Fresh Coconut</h3><span class="price">$4</span></div>
-                    <p>Cracked open to order. Ask us to add a shot of rum.</p>
+                    <div class="item-head"><h3>Man Overboard Coconut</h3><span class="price">$4</span></div>
+                    <p>Fresh coconut cracked open to order. Ask us to throw in a shot of rum.</p>
                 </li>
                 <li class="menu-item">
                     <div class="item-head"><h3>Agua de Jamaica</h3><span class="price">$3</span></div>
                     <p>Chilled hibiscus tea, lightly sweetened.</p>
                 </li>
                 <li class="menu-item">
-                    <div class="item-head"><h3>Guatemalan Coffee</h3><span class="price">$3</span></div>
-                    <p>Single-origin from the Antigua highlands.</p>
+                    <div class="item-head"><h3>Night Watch Coffee</h3><span class="price">$3</span></div>
+                    <p>Single-origin Guatemalan from the Antigua highlands.</p>
                 </li>
             </ul>
         </section>
@@ -149,13 +207,14 @@
         <p class="menu-legend">
             <span class="tag v">V</span> Vegetarian &nbsp;
             <span class="tag gf">GF</span> Gluten-free &nbsp;·&nbsp;
-            Please tell your server about any allergies.
+            Please tell your crew member about any allergies.
         </p>
 
     </main>
 
-    <footer>
-        <p>&copy; 2026 The Walkabout Galley</p>
+    <footer class="menu-footer">
+        <p class="fair-winds">⚓ Fair winds &amp; following seas ⚓</p>
+        <p>&copy; 2026 Moana Nui Galley</p>
     </footer>
 
 </body>
